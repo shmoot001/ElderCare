@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "admin server för eldercare applikationen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "arwid nygren",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "crypto": "^1.0.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "mongoose": "^7.5.2",
+    "socket.io": "^4.7.2",
+    "socketio": "^1.0.0"
+  }
+}

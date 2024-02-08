@@ -1,0 +1,104 @@
+[{
+  "_id": {
+    "$oid": "650acc6bc5fb085a1cb19717"
+  },
+  "username": "gamling1",
+  "password": "test",
+  "contact": "112",
+  "birthday": {
+    "$date": "2023-09-20T00:00:00.000Z"
+  },
+  "name": "Sven-Gösta Nygren",
+  "preferences": "Allergisk mot hö",
+  "language": "en",
+  "pin": "9999",
+  "address": "Skogsvägen 33"
+},
+{
+  "_id": {
+    "$oid": "651523536573682577867a59"
+  },
+  "username": "jonasbjörklund",
+  "password": "liberalerna99",
+  "contact": "054346512",
+  "birthday": {
+    "$date": {
+      "$numberLong": "-734707092271"
+    }
+  },
+  "name": "Jonas Björklund",
+  "preferences": "Ogillar Tomat",
+  "language": "en",
+  "pin": 7575,
+  "address": "Tomatsoppagatan 13"
+},
+{
+  "_id": {
+    "$oid": "651523bd6573682577867a5c"
+  },
+  "username": "göranfältskog",
+  "password": "Password123",
+  "contact": "053312954",
+  "birthday": {
+    "$date": {
+      "$numberLong": "-482246292271"
+    }
+  },
+  "name": "Göran Fältskog",
+  "preferences": "Allergisk mot Vitlök",
+  "language": "sv",
+  "pin": 8354,
+  "address": "Svaneholmsgatan 23A"
+},
+{
+  "_id": {
+    "$oid": "651525346573682577867a63"
+  },
+  "username": "fatimamarsem",
+  "password": "hejhej",
+  "contact": "112",
+  "birthday": {
+    "$date": {
+      "$numberLong": "-482284800000"
+    }
+  },
+  "name": "Fatima Marsem",
+  "preferences": "Dricker Ayran till maten (med vitlök i)",
+  "language": "sv",
+  "pin": "9432",
+  "address": "Drottninggatan 10"
+},
+{
+  "_id": {
+    "$oid": "6519b568375192c680d0868c"
+  },
+  "username": "Arwid99",
+  "password": "Hejhhej",
+  "contact": "0738041828",
+  "address": "Norra Allén 14",
+  "birthday": {
+    "$date": "1997-02-16T00:00:00.000Z"
+  },
+  "preferences": "Allergisk mot gurka",
+  "name": "Arwid Nygren",
+  "pin": "5432",
+  "language": "sv",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "651c0e25c0763fc1138184d8"
+  },
+  "username": "George",
+  "password": "Messi123",
+  "contact": "07123123123",
+  "birthday": {
+    "$date": {
+      "$numberLong": "-482246292271"
+    }
+  },
+  "name": "Georg",
+  "pin": "1234",
+  "language": "en",
+  "__v": 0
+}]

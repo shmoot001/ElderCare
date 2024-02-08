@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Bootstrap! :) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        // Event handler when the connection is established
+        socket.addEventListener("open", (event) => {
+        console.log("Connected to the server");
+        });
+        // Event handler when an error occurs
+        socket.addEventListener("login-error", (event) => {
+        alert(event);
+        });
+
+    </script>
+    <title>Admin settings</title>
+</head>
+<body class = "bg-dark">
+    <ul class="nav nav-tabs bg-dark">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="/dashboard" href="/dashboard">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/caretakers">Caretakers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/elders">Elders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Meals</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/settings">⚙️</a>
+          </li>
+      </ul>
+    <div class="d-flex flex-column align-items-center text-light" style="height: 100vh;">
+    <h2>Settings</h2>
+    <form action="/signout" method="POST">
+        <button type="submit" class="btn btn-danger">Sign Out</button>
+    </form>
+    
+    
+    </form>
+    </div>
+</body>
+</html>

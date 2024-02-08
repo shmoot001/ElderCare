@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "651159a8acd8341e9907d9a5"
+  },
+  "username": "bubas",
+  "password": "test",
+  "contact": "0738041828",
+  "birthday": {
+    "$date": "2023-09-25T09:57:59.910Z"
+  },
+  "name": "Arwid Nygren Karlsson",
+  "carerecepients": [
+    "fatimamarsem",
+    "Kersting"
+  ],
+  "formal": true,
+  "language": "sv",
+  "pin": 1234,
+  "address": "Sveavägen 30"
+},
+{
+  "_id": {
+    "$oid": "651522f16573682577867a57"
+  },
+  "username": "emunils",
+  "password": "Coffee6237",
+  "contact": "0738041828",
+  "birthday": {
+    "$date": "2000-04-26T09:57:59.910Z"
+  },
+  "name": "Emu Nilsson",
+  "carerecepients": [
+    "gamling1",
+    "fatimamarsem"
+  ],
+  "formal": true,
+  "language": "en",
+  "pin": 6237,
+  "address": "Duettgatan 9"
+},
+{
+  "_id": {
+    "$oid": "651524ac6573682577867a5f"
+  },
+  "username": "saed",
+  "password": "hassan",
+  "contact": "0732323210",
+  "birthday": {
+    "$date": "1998-08-04T09:57:59.910Z"
+  },
+  "name": "Ahmad",
+  "carerecepients": [
+    "gamling1",
+    "fatimamarsem"
+  ],
+  "formal": false,
+  "language": "sv",
+  "pin": 1234,
+  "address": "Duettgatan 10"
+}]

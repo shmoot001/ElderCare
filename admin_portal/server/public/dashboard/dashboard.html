@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+<head>
+    <!--Bootstrap! :) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        // Event handler when the connection is established
+        socket.addEventListener("open", (event) => {
+        console.log("Connected to the server");
+        });
+        // Event handler when an error occurs
+        socket.addEventListener("login-error", (event) => {
+        alert(event);
+        });
+
+    </script>
+    <title>Admin Dashboard</title>
+</head>
+<body class = "bg-dark">
+    <ul class="nav nav-tabs bg-dark">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="/dashboard" href="/dashboard">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/caretakers">Caretakers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/elders">Elders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Meals</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/settings">⚙️</a>
+          </li>
+      </ul>
+    <div class="d-flex flex-column align-items-center text-light" style="height: 100vh;">
+    <h2>Welcome to Eldercare Administration!</h2>
+
+    <a>Here you can add New administrators, configure your employees (caretakers), or configure the elders.</a>
+    <form action="/newAdmin" method="POST" id="newUserForm" style="margin-top: 100px;">
+      <h3>Create New Admin</h3>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="text" id="username" name="username" placeholder="Username" required>
+        </div>
+        <div class="form-group col-md-6">
+          <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+      </div>
+      <div>
+          <button type="submit" class="btn btn-success" style="margin-top: 10px;">Create new</button>
+      </div>
+  </form>
+        
+    </form>
+    </div>
+</body>
+</html>
